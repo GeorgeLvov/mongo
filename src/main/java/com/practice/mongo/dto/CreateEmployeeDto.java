@@ -3,14 +3,14 @@ package com.practice.mongo.dto;
 import com.practice.mongo.models.Gender;
 import lombok.Data;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 @Data
 public class CreateEmployeeDto {
 
     private String name;
 
-    private Date birthDate;
+    private LocalDate birthDate;
 
     private Gender gender;
 

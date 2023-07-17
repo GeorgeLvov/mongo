@@ -8,11 +8,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 import org.springframework.data.mongodb.core.mapping.FieldType;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 @Document(collection = "employees")
-@Accessors(chain = true)
 @Data
+@Accessors(chain = true)
 @EqualsAndHashCode(callSuper = true)
 public class Employee extends BaseModel {
 
@@ -20,7 +20,7 @@ public class Employee extends BaseModel {
     private String name;
 
     @Field(name = "dateOfBirth")
-    private Date birthDate;
+    private LocalDate birthDate;
 
     @Field(targetType = FieldType.STRING)
     private Gender gender;

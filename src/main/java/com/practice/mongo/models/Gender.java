@@ -3,6 +3,7 @@ package com.practice.mongo.models;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum Gender {
+
     MALE("male"),
     FEMALE("female");
 

@@ -21,9 +21,10 @@ POST http://localhost:8080/companies
     "name": "International Business Machines",
     "acronym": "IBM",
     "address": {
-    "city": "New-York",
-    "postalCode": "10001",
-    "street": "590 Madison Avenue"
+       "city": "New-York",
+       "postalCode": "10001",
+       "street": "590 Madison Avenue"
+    }
 }
 ```
 
